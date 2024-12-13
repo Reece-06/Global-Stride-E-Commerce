@@ -2,7 +2,7 @@
 .header {
   display: flex;
   gap: 3.2rem;
-  /* background-color: var(--lighter-primary-color); */
+  background-color: var(--lighter-primary-color);
 }
 .header__img {
   width: var(--logo-size);
@@ -34,6 +34,7 @@
   border: 1.3px solid var(--dark-primary-color);
   display: flex;
   align-items: center;
+  background-color: #fff;
 }
 .header__search {
   width: 20rem;
