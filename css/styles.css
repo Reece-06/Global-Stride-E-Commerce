@@ -3,13 +3,15 @@
   display: flex;
   gap: 3.2rem;
   background-color: var(--lighter-primary-color);
+  position: relative;
 }
 .header__img {
   width: var(--logo-size);
 }
 .header__nav {
-  display: flex;
-  align-self: center;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
 }
 .header__list {
   display: flex;
@@ -21,7 +23,17 @@
 .header__link:visited {
   color: var(--default-txt-color);
   font-size: var(--medium-text);
+  padding: 0 0.8rem;
+  padding-bottom: 3.2rem;
+  display: inline-block;
+  border-bottom: 4px solid transparent;
+  transition: all 0.5s;
 }
+.header__link:hover,
+.header__link:active {
+  border-color: var(--dark-primary-color);
+}
+
 .header__aside {
   margin-left: auto;
   align-self: center;
