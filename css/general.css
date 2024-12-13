@@ -1,0 +1,112 @@
+/* 
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font size 
+  medium: 2rem
+  large: 3rem
+  larger: 4.4rem;
+  largest: 5.2rem;
+
+- Font weights
+  regular: 400
+  semi-bold: 600
+  bold: 700
+
+- Line heights
+
+
+- Letter spacing
+
+
+--- 02 COLORS
+
+- Primary: #0060d6
+
+- Tints:
+#CCDFF7
+#e6effb
+
+- Shades: 
+#00306b
+
+- Accents:
+- Greys
+
+
+--- 05 SHADOWS
+
+
+--- 06 BORDER-RADIUS
+
+Default: 
+Medium: 
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+:root {
+  /* Color */
+  --primary-color: #0060d6;
+  --dark-primary-color: #00306b;
+  --light-primary-color: #ccdff7;
+  --lighter-primary-color: #e6effb;
+
+  /* Text */
+  --default-txt-color: #333;
+  --logo-size: 8rem;
+  --medium-text: 2rem;
+  --large-text: 3rem;
+  --larger-text: 4.4rem;
+  --largest-text: 5.2rem;
+
+  /* Padding */
+  --default-vert-padding: 1.2rem;
+  --default-hori-padding: 2.4rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  /* font-size: 10px; */
+
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+body {
+  color: var(--default-txt-color);
+  font-family: "Inter", sans-serif;
+}
+/**************************/
+/* GENRAL REUSABLE COMPONENTS */
+/**************************/
+.container {
+  margin: 0 auto;
+}
+.container--width {
+  max-width: 200rem;
+}
+.general-padding {
+  padding: var(--default-vert-padding) var(--default-hori-padding);
+}
+
+.list {
+  list-style: none;
+}
+.link:link,
+.link:visited {
+  text-decoration: none;
+}
+.icon {
+  color: #0060d6;
+  font-size: 2.4rem;
+}
+/* HELPER/SETTINGS CLASSES */

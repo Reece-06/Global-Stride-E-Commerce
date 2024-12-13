@@ -7,7 +7,73 @@
       content="width=
   , initial-scale=1.0"
     />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/general.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Global Stride</title>
   </head>
-  <body></body>
+  <body>
+    <!-- HEADER -->
+    <header class="header general-padding">
+      <a href="#">
+        <img
+          src="imgs/logo-alternative.png"
+          alt="Global Stride company logo"
+          class="header__img"
+        />
+      </a>
+      <nav class="header__nav">
+        <ul class="header__list list">
+          <li>
+            <a href="#" class="header__link link">Men</a>
+          </li>
+          <li>
+            <a href="#" class="header__link link">Women</a>
+          </li>
+          <li>
+            <a href="#" class="header__link link">Kids</a>
+          </li>
+          <li>
+            <a href="#" class="header__link link">New & Trending</a>
+          </li>
+          <li>
+            <a href="#" class="header__link link">Sale</a>
+          </li>
+        </ul>
+      </nav>
+      <aside class="header__aside">
+        <form class="header__form">
+          <input type="text" placeholder="Search" class="header__search" />
+          <ion-icon name="search" class="header__search--icon icon"></ion-icon>
+        </form>
+        <ion-icon name="person" class="icon"></ion-icon>
+        <ion-icon name="cart" class="icon"></ion-icon>
+      </aside>
+    </header>
+    <!-- MAIN -->
+    <main>
+      <section class="section-hero">
+        <div class="section-hero__container">
+          <h1 class="section-hero__heading">
+            Equipping Runners to Go the Distance
+          </h1>
+          <a href="#" class="section-hero__link link">Shop Now</a>
+        </div>
+      </section>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
