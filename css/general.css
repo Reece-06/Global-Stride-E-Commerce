@@ -31,9 +31,12 @@
 
 - Shades: 
 #00306b
+#00132b
 
 - Accents:
 - Greys
+#555
+#888
 
 
 --- 05 SHADOWS
@@ -54,12 +57,17 @@ Medium:
   /* Color */
   --primary-color: #0060d6;
   --dark-primary-color: #00306b;
+  --darkest-primary-color: #00132b;
   --light-primary-color: #ccdff7;
   --lighter-primary-color: #e6effb;
 
   /* Text */
   --default-txt-color: #333;
+  --light-grey: #888;
   --logo-size: 8rem;
+  --smallest-text: 1.2rem;
+  --smaller-text: 1.6rem;
+  --small-text: 1.8rem;
   --medium-text: 2rem;
   --large-text: 3rem;
   --larger-text: 4.4rem;
@@ -68,6 +76,11 @@ Medium:
   /* Padding */
   --default-vert-padding: 1.2rem;
   --default-hori-padding: 2.4rem;
+  --btn-vert-padding: 1.6rem;
+  --btn-hori-padding: 3.2rem;
+
+  /* White Space */
+  --default-white-space: 8rem;
 }
 * {
   margin: 0;
@@ -108,5 +121,27 @@ body {
 .icon {
   color: #0060d6;
   font-size: 2.4rem;
+}
+.btn {
+  border-width: 2px;
+  border-style: solid;
+}
+/* Reusable Grid */
+
+.grid {
+  display: grid;
+  align-items: center;
+}
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid-5-cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 /* HELPER/SETTINGS CLASSES */
