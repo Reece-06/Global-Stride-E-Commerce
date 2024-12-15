@@ -29,6 +29,7 @@
 #CCDFF7
 #e6effb
 
+
 - Shades: 
 #00306b
 #00132b
@@ -37,6 +38,7 @@
 - Greys
 #555
 #888
+#ddd
 
 
 --- 05 SHADOWS
@@ -64,6 +66,7 @@ Medium:
   /* Text */
   --default-txt-color: #333;
   --light-grey: #888;
+  --lighter-grey: #ddd;
   --logo-size: 8rem;
   --smallest-text: 1.2rem;
   --smaller-text: 1.6rem;
@@ -105,7 +108,7 @@ body {
   margin: 0 auto;
 }
 .container--width {
-  max-width: 200rem;
+  max-width: 150rem;
 }
 .general-padding {
   padding: var(--default-vert-padding) var(--default-hori-padding);

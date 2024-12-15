@@ -122,6 +122,7 @@
   font-size: var(--medium-text);
   color: var(--darkest-primary-color);
   background-color: #fff;
+  transition: all 0.3s;
 }
 .section-new__btn:hover {
   color: var(--lighter-primary-color);
@@ -132,30 +133,57 @@
   color: var(--lighter-primary-color);
   background-color: var(--darkest-primary-color);
 }
-.section-new__all {
+.section-new__all:link,
+.section-new__all:visited {
   position: absolute;
   top: 50%;
   right: 0;
   transform: translateY(-50%);
   font-size: var(--medium-text);
   font-weight: 400;
-  text-decoration: solid underline;
-  text-underline-offset: 5px;
+  /* text-decoration: solid underline;
+  text-underline-offset: 5px; */
+  color: var(--darkest-primary-color);
+  padding-bottom: 3px;
+  border-bottom: 1.5px solid currentColor;
+  transition: all 0.3s;
 }
 .section-new__all:hover,
-.section-new__all:visited {
+.section-new__all:active {
   color: var(--light-grey);
-  cursor: pointer;
 }
 .section-new__products {
   display: flex;
   gap: 3.2rem;
   overflow-x: scroll;
-  padding: var(--default-vert-padding);
+  padding: var(--default-vert-padding) 0;
+  /* scrollbar-color: #000 grey; */
+}
+/* SCROLLBAR ACCESSIBILITY (CHROME, SAFARI) */
+.section-new__products::-webkit-scrollbar {
+  height: 8px;
+}
+.section-new__products::-webkit-scrollbar-thumb {
+  background-color: var(--darkest-primary-color);
+  cursor: grab;
+}
+.section-new__products::-webkit-scrollbar-thumb:active {
+  cursor: grabbing;
+}
+.section-new__products::-webkit-scrollbar-track {
+  background-color: var(--lighter-grey);
+}
+.section-new__products::-webkit-scrollbar:hover {
+  height: 10px;
 }
 .section-new__product {
-  /* flex-shrink: 0; */
-  border: 1px solid #000;
+  margin-bottom: 1.6rem;
+  transition: all 0.1s;
+}
+.section-new__product:hover,
+.section-new__product:active {
+  transform: translateY(-0.5rem);
+  background-color: var(--lighter-grey);
 }
 
 .section-new__img {
@@ -167,6 +195,7 @@
   flex-direction: column;
   gap: 1.6rem;
   padding: var(--default-vert-padding) var(--default-hori-padding);
+  color: var(--default-txt-color);
 }
 .section-new__name {
   font-size: var(--small-text);
@@ -182,7 +211,6 @@
 .section-new__tag {
   font-size: var(--smallest-text);
   padding: 0.4rem 0.8rem;
-  background-color: aqua;
 }
 .section-new__tag--men {
   background-color: rgb(187, 187, 187);
