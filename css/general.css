@@ -12,6 +12,7 @@
 
 - Font weights
   regular: 400
+  semi-regular: 500
   semi-bold: 600
   bold: 700
 
@@ -36,6 +37,7 @@
 
 - Accents:
 - Greys
+#333
 #555
 #888
 #ddd
@@ -75,6 +77,7 @@ Medium:
   --large-text: 3rem;
   --larger-text: 4.4rem;
   --largest-text: 5.2rem;
+  --largest-text-XL: 6.2rem;
 
   /* Padding */
   --default-vert-padding: 1.2rem;
@@ -83,7 +86,8 @@ Medium:
   --btn-hori-padding: 3.2rem;
 
   /* White Space */
-  --default-white-space: 8rem;
+  --default-white-space: 12.8rem;
+  --small-white-space: 9.6rem;
 }
 * {
   margin: 0;
