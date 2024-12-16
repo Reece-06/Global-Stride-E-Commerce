@@ -96,7 +96,7 @@
 .section-hero__link:link,
 .section-hero__link:visited {
   color: var(--light-primary-color);
-  font-size: var(--medium-text);
+  font-size: var(--large-text);
   font-weight: 700;
 
   padding: var(--btn-vert-padding) var(--btn-hori-padding);
@@ -160,6 +160,7 @@
   color: var(--darkest-primary-color);
   padding-bottom: 3px;
   border-bottom: 1.5px solid currentColor;
+
   transition: all 0.3s;
 }
 .section-new__all:hover,
@@ -294,4 +295,63 @@
   background-color: var(--default-txt-color);
   padding: 0.4rem 0.8rem;
   z-index: 99;
+}
+
+/****************************************** 
+  POPULAR RIGHT NOW
+*******************************************/
+
+.section-popular {
+  padding: var(--small-white-space) 0;
+}
+.section-popular__header {
+  padding: 0 var(--default-hori-padding);
+}
+.section-popular__span {
+  text-transform: uppercase;
+  font-size: var(--medium-text);
+  font-weight: 600;
+  color: var(--primary-color);
+  letter-spacing: 1.5px;
+  margin-bottom: 2.4rem;
+  display: inline-block;
+}
+.section-popular__heading {
+  text-transform: capitalize;
+  font-size: var(--largest-text);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 8rem;
+}
+.section-popular__container {
+  padding: 0 var(--default-hori-padding);
+  row-gap: 6.4rem;
+  column-gap: 3.2rem;
+}
+.section-popular__line {
+  font-size: var(--large-text);
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.section-popular__link:link,
+.section-popular__link:visited {
+  color: var(--default-txt-color);
+  border-bottom: 4px solid currentColor;
+  display: inline-block;
+  padding-bottom: 8px;
+  transition: all 0.3s;
+}
+.section-popular__link:hover,
+.section-popular__link:active {
+  color: var(--primary-color);
+}
+
+/****************************************** 
+  CALL TO ACTION
+*******************************************/
+.section-cta {
+  padding: var(--default-white-space) 0;
+}
+.section-cta__container {
+  padding: 0 var(--default-hori-padding);
 }
