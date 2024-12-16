@@ -350,8 +350,104 @@
   CALL TO ACTION
 *******************************************/
 .section-cta {
-  padding: var(--default-white-space) 0;
+  padding: var(--big-white-space) 0;
 }
 .section-cta__container {
   padding: 0 var(--default-hori-padding);
+}
+.section-cta__signup {
+  background-color: var(--dark-primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+  padding: 4.8rem 0;
+}
+.section-cta__text {
+  text-transform: uppercase;
+  font-size: var(--large-text);
+  font-weight: 700;
+  color: var(--lighter-primary-color);
+}
+.section-cta__btn:link,
+.section-cta__btn:visited {
+  text-transform: uppercase;
+  color: var(--default-txt-color);
+  font-size: var(--small-text);
+  font-weight: 600;
+  background-color: var(--lighter-primary-color);
+  border: 3px solid transparent;
+  padding: 1.6rem 3.2rem;
+  transition: all 0.3s;
+}
+.section-cta__btn:hover,
+.section-cta__btn:active {
+  /* border: 3px solid var(--light-grey); */
+  background-color: var(--light-grey);
+  color: var(--lighter-primary-color);
+}
+.section-cta__arrow {
+  margin-left: 0.4rem;
+}
+
+/****************************************** 
+  FOOTER
+*******************************************/
+.footer {
+  padding-top: var(--smallest-white-space);
+  padding-bottom: var(--smallest-white-space);
+  background-color: var(--lighter-primary-color);
+}
+.footer__container {
+  padding: 0 var(--default-hori-padding);
+  align-items: start;
+}
+
+.footer__container--width {
+  max-width: 160rem;
+}
+.footer__container--grid-temp {
+  grid-template-columns: 4fr repeat(4, 3fr);
+}
+
+.footer__logo {
+  width: 15rem;
+  margin-bottom: 1.6rem;
+}
+.footer__p {
+  text-transform: capitalize;
+  font-size: var(--medium-text);
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+.footer__icons {
+  display: flex;
+  gap: 0.8rem;
+}
+.footer__icon {
+  color: var(--default-txt-color);
+  font-size: 2.4rem;
+}
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.footer__link-heading {
+  font-size: var(--medium-text);
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+.footer__link:link,
+.footer__link:visited {
+  color: var(--default-txt-color);
+  font-size: 1.4rem;
+  font-weight: 500;
+  transition: all 0.3s;
+  border-bottom: 2px solid transparent;
+}
+.footer__link:hover,
+.footer__link:active {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
 }

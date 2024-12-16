@@ -86,8 +86,10 @@ Medium:
   --btn-hori-padding: 3.2rem;
 
   /* White Space */
+  --big-white-space: 15rem;
   --default-white-space: 12.8rem;
   --small-white-space: 9.6rem;
+  --smallest-white-space: 4.8rem;
 }
 * {
   margin: 0;
