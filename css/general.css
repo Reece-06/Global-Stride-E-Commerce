@@ -135,6 +135,17 @@ body {
   border-width: 2px;
   border-style: solid;
 }
+.gen-link:link,
+.gen-link:visited {
+  color: var(--default-txt-color);
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+}
+.gen-link:hover,
+.gen-link:active {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
 /* Reusable Grid */
 
 .grid {

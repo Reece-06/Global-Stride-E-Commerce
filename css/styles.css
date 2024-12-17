@@ -67,6 +67,46 @@
 .header__search:focus {
   outline: none;
 }
+.header__subnav {
+  position: absolute;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(100%);
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+.header--subnav-open .header__subnav {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+.header__subnav-container {
+  align-items: stretch;
+}
+.header__subnav-inner {
+  padding: 3.2rem 6.4rem;
+}
+.header__subnav-inner:first-child {
+  background-color: var(--light-primary-color);
+}
+.header__subnav-title {
+  font-size: var(--medium-text);
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+.header__subnav-links {
+  display: flex;
+  gap: 0.8rem;
+  flex-direction: column;
+}
+.header__subnav-link:link,
+.header__subnav-link:visited {
+  font-size: var(--smaller-text);
+}
 
 /****************************************** 
   HERO
@@ -440,14 +480,6 @@
 }
 .footer__link:link,
 .footer__link:visited {
-  color: var(--default-txt-color);
   font-size: 1.4rem;
   font-weight: 500;
-  transition: all 0.3s;
-  border-bottom: 2px solid transparent;
-}
-.footer__link:hover,
-.footer__link:active {
-  color: var(--primary-color);
-  border-bottom: 2px solid var(--primary-color);
 }
