@@ -141,7 +141,7 @@
       </div>
     </header>
     <main class="products">
-      <section class="products__container container">
+      <section class="products__container container grid">
         <section class="products__filters">
           <p class="products__filter-title">Filter Products</p>
           <div class="products__accordions">
@@ -246,6 +246,41 @@
               </div>
             </div>
           </div>
+        </section>
+        <section class="products__items grid product__items--grid">
+          <section class="products__breadcrumbs">
+            <a href="#" class="products__breadcrumb-link link">home</a>
+            <span class="products__breadcrumb-span">/</span>
+
+            <a href="#" class="products__breadcrumb-link link">men</a>
+            <span class="products__breadcrumb-span">/</span>
+
+            <a href="#" class="products__breadcrumb-link link">featured</a>
+            <span class="products__breadcrumb-span">/</span>
+
+            <a href="#" class="products__breadcrumb-link link">shoes</a>
+            <span class="products__breadcrumb-span">/</span>
+          </section>
+          <section class="products__heading-sort">
+            <h1 class="products__heading">Running</h1>
+            <form action="" class="products__sort-form">
+              <label for="products-sort" class="products__sort-label"
+                >sort by:</label
+              >
+              <select
+                name="products-sort"
+                id="products-sort"
+                class="products__sort-select"
+              >
+                <option value="featured">Featured</option>
+                <option value="best-sellers">Best Sellers</option>
+                <option value="alphabetical-a-z">Alphabetical: A-Z</option>
+                <option value="alphabetical-z-a">Alphabetical: Z-A</option>
+                <option value="price-low-high">Price: Low To High</option>
+                <option value="price-high-low">Price: High To Low</option>
+              </select>
+            </form>
+          </section>
         </section>
       </section>
     </main>
