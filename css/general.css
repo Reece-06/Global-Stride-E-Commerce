@@ -146,6 +146,19 @@ body {
   color: var(--primary-color);
   border-color: var(--primary-color);
 }
+/* Tag colors */
+.tag-men {
+  background-color: rgb(187, 187, 187);
+}
+.tag-women {
+  background-color: pink;
+}
+.tag-hot {
+  background-color: rgb(255, 98, 98);
+}
+.tag-new {
+  background-color: rgb(255, 255, 84);
+}
 /* Reusable Grid */
 
 .grid {

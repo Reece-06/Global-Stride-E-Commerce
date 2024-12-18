@@ -266,18 +266,6 @@
   font-size: var(--smallest-text);
   padding: 0.4rem 0.8rem;
 }
-.section-new__tag--men {
-  background-color: rgb(187, 187, 187);
-}
-.section-new__tag--women {
-  background-color: pink;
-}
-.section-new__tag--hot {
-  background-color: rgb(255, 98, 98);
-}
-.section-new__tag--new {
-  background-color: rgb(255, 255, 84);
-}
 
 /****************************************** 
   SHOPPING PREFERENCE
@@ -593,4 +581,37 @@
   font-family: inherit;
   font-size: var(--smallest-text);
   border: 1px solid var(--darkest-primary-color);
+}
+.products__prod {
+  grid-column: 1/-1;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1.6rem;
+  row-gap: 0.8rem;
+}
+.products__prod-img {
+  width: 100%;
+  height: auto;
+}
+.products__prod-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+.products__prod-name {
+  font-size: var(--smaller-text);
+  font-weight: 700;
+}
+.products__prod-price {
+  font-size: var(--smallest-text);
+  font-weight: 600;
+}
+.products__prod-tags {
+  font-size: var(--smallest-text);
+  font-weight: 400;
+  display: flex;
+  gap: 0.8rem;
+}
+.products__prod-tag {
+  padding: 0.4rem 0.8rem;
 }
