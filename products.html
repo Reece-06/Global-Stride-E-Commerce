@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Stride Products</title>
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <!-- To open sub navigation (header--subnav-open) -->
+    <header class="header general-padding">
+      <a href="#">
+        <img
+          src="imgs/logo-alternative.png"
+          alt="Global Stride company logo"
+          class="header__img"
+        />
+      </a>
+      <nav class="header__nav">
+        <ul class="header__list list">
+          <li>
+            <a href="#" class="header__link link">Men</a>
+          </li>
+          <li>
+            <a href="#" class="header__link link">Women</a>
+          </li>
+          <li>
+            <a href="#" class="header__link link">Kids</a>
+          </li>
+          <li>
+            <a href="#" class="header__link link">New & Trending</a>
+          </li>
+          <li>
+            <a href="#" class="header__link link">Sale</a>
+          </li>
+        </ul>
+      </nav>
+      <aside class="header__aside">
+        <form class="header__form">
+          <input type="text" placeholder="Search" class="header__search" />
+          <a href="#">
+            <ion-icon
+              name="search"
+              class="header__search--icon icon"
+            ></ion-icon>
+          </a>
+        </form>
+        <a href="#">
+          <ion-icon name="person" class="icon"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="cart" class="icon"></ion-icon>
+        </a>
+      </aside>
+      <div class="header__subnav">
+        <nav class="header__subnav-container grid grid-4-cols">
+          <div class="header__subnav-inner">
+            <p class="header__subnav-title">New Arrivals & Best Sellers</p>
+            <ul class="header__subnav-links list">
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__subnav-inner">
+            <p class="header__subnav-title">Shoes</p>
+            <ul class="header__subnav-links list">
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__subnav-inner">
+            <p class="header__subnav-title">Clothes</p>
+            <ul class="header__subnav-links list">
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__subnav-inner">
+            <p class="header__subnav-title">Accessories</p>
+            <ul class="header__subnav-links list">
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="products">
+      <section class="products__container container">
+        <section class="products__filters">
+          <p class="products__filter-title">Filter Products</p>
+          <div class="products__accordions">
+            <!-- To open accordion (products__accordion-open) -->
+            <div class="products__accordion products__accordion-open">
+              <div class="products__accordion-upper">
+                <p class="products__accordion-title">Gender</p>
+                <ion-icon name="add" class="products__icon"></ion-icon>
+              </div>
+
+              <div class="products__accordion-lower">
+                <form action="" class="products__accordion-form">
+                  <div class="products__accordion-indiv-checkbox">
+                    <input type="checkbox" name="men-filter" id="men-filter" />
+                    <label for="men-filter">Men (42)</label>
+                  </div>
+
+                  <div class="products__accordion-indiv-checkbox">
+                    <input
+                      type="checkbox"
+                      name="women-filter"
+                      id="women-filter"
+                    />
+                    <label for="women-filter">Women (42)</label>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="products__accordion">
+              <div class="products__accordion-upper">
+                <p class="products__accordion-title">Gender</p>
+                <ion-icon name="add" class="products__icon"></ion-icon>
+              </div>
+
+              <div class="products__accordion-lower">
+                <form action="">
+                  <div class="products__accordion-indiv-checkbox">
+                    <input type="checkbox" name="men-filter" id="men-filter" />
+                    <label for="men-filter">Men (42)</label>
+                  </div>
+
+                  <div class="products__accordion-indiv-checkbox">
+                    <input
+                      type="checkbox"
+                      name="women-filter"
+                      id="women-filter"
+                    />
+                    <label for="women-filter">Women (42)</label>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="products__accordion">
+              <div class="products__accordion-upper">
+                <p class="products__accordion-title">Gender</p>
+                <ion-icon name="add" class="products__icon"></ion-icon>
+              </div>
+
+              <div class="products__accordion-lower">
+                <form action="">
+                  <div class="products__accordion-indiv-checkbox">
+                    <input type="checkbox" name="men-filter" id="men-filter" />
+                    <label for="men-filter">Men (42)</label>
+                  </div>
+
+                  <div class="products__accordion-indiv-checkbox">
+                    <input
+                      type="checkbox"
+                      name="women-filter"
+                      id="women-filter"
+                    />
+                    <label for="women-filter">Women (42)</label>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="products__accordion">
+              <div class="products__accordion-upper">
+                <p class="products__accordion-title">Gender</p>
+                <ion-icon name="add" class="products__icon"></ion-icon>
+              </div>
+
+              <div class="products__accordion-lower">
+                <form action="">
+                  <div class="products__accordion-indiv-checkbox">
+                    <input type="checkbox" name="men-filter" id="men-filter" />
+                    <label for="men-filter">Men (42)</label>
+                  </div>
+
+                  <div class="products__accordion-indiv-checkbox">
+                    <input
+                      type="checkbox"
+                      name="women-filter"
+                      id="women-filter"
+                    />
+                    <label for="women-filter">Women (42)</label>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer class="footer">
+      <div
+        class="footer__container container footer__container--width grid footer__container--grid-temp"
+      >
+        <section class="footer__logo-sc">
+          <img
+            src="imgs/logo-alternative.png"
+            alt="Global Stride company logo"
+            class="footer__logo"
+          />
+          <p class="footer__p">Follow us</p>
+          <div class="footer__icons">
+            <a href="#"
+              ><ion-icon name="logo-facebook" class="footer__icon"></ion-icon
+            ></a>
+            <a href="#"
+              ><ion-icon name="logo-twitter" class="footer__icon"></ion-icon
+            ></a>
+            <a href="#"
+              ><ion-icon name="logo-instagram" class="footer__icon"></ion-icon
+            ></a>
+          </div>
+        </section>
+        <section class="footer__products">
+          <h3 class="footer__link-heading">Products</h3>
+          <ul class="footer__links list">
+            <li><a href="" class="footer__link link gen-link">Hello</a></li>
+            <li><a href="" class="footer__link link gen-link">Hello</a></li>
+            <li><a href="" class="footer__link link gen-link">Hello</a></li>
+            <li><a href="" class="footer__link link gen-link">Hello</a></li>
+          </ul>
+        </section>
+        <section class="footer__men">
+          <h3 class="footer__link-heading">Men</h3>
+          <ul class="footer__links list">
+            <li><a href="" class="footer__link link gen-link">Hello</a></li>
+            <li><a href="" class="footer__link link gen-link">Hello</a></li>
+            <li><a href="" class="footer__link link gen-link">Hello</a></li>
+            <li><a href="" class="footer__link link gen-link">Hello</a></li>
+          </ul>
+        </section>
+        <section class="footer__women">
+          <h3 class="footer__link-heading">Women</h3>
+          <ul class="footer__links list">
+            <li><a href="" class="footer__link link gen-link">Hello</a></li>
+            <li><a href="" class="footer__link link gen-link">Hello</a></li>
+            <li><a href="" class="footer__link link gen-link">Hello</a></li>
+            <li><a href="" class="footer__link link gen-link">Hello</a></li>
+          </ul>
+        </section>
+        <section class="footer__kids">
+          <h3 class="footer__link-heading">Kids</h3>
+          <ul class="footer__links list">
+            <li><a href="" class="footer__link link gen-link">Hello</a></li>
+            <li><a href="" class="footer__link link gen-link">Hello</a></li>
+            <li><a href="" class="footer__link link gen-link">Hello</a></li>
+            <li><a href="" class="footer__link link gen-link">Hello</a></li>
+          </ul>
+        </section>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

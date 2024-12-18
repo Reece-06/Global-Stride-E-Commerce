@@ -483,3 +483,63 @@
   font-size: 1.4rem;
   font-weight: 500;
 }
+/****************************************** 
+  PRODUCTS
+*******************************************/
+.products {
+  padding: var(--smallest-white-space) 0;
+}
+.products__container {
+  max-width: 140rem;
+  padding: 0 var(--default-hori-padding);
+}
+.products__filters {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 30%;
+}
+.products__filter-title {
+  font-size: var(--medium-text);
+  font-weight: 600;
+  letter-spacing: 0.8px;
+}
+.products__accordions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.products__accordion-upper {
+  font-size: var(--smaller-text);
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 0;
+}
+.products__accordion-upper:hover {
+  cursor: pointer;
+}
+.products__icon {
+  color: var(--default-txt-color);
+  font-size: 2rem;
+  --ionicon-stroke-width: 40px;
+}
+.products__accordion-lower {
+  display: none;
+  background-color: var(--light-primary-color);
+  padding: 1.6rem;
+}
+.products__accordion-open .products__accordion-lower {
+  display: block;
+}
+.products__accordion-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.products__accordion-indiv-checkbox {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
