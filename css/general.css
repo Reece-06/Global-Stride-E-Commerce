@@ -74,6 +74,7 @@ Medium:
   --smaller-text: 1.6rem;
   --small-text: 1.8rem;
   --medium-text: 2rem;
+  --large-small-text: 2.4rem;
   --large-text: 3rem;
   --larger-text: 4.4rem;
   --largest-text: 5.2rem;
@@ -145,6 +146,16 @@ body {
 .gen-link:active {
   color: var(--primary-color);
   border-color: var(--primary-color);
+}
+/* Product Cards */
+.product-card {
+  margin-bottom: 1.6rem;
+  transition: all 0.1s;
+}
+.product-card:hover,
+.product-card:active {
+  transform: translateY(-0.5rem);
+  background-color: var(--lighter-grey);
 }
 /* Tag colors */
 .tag-men {
