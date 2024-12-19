@@ -188,4 +188,3 @@ body {
 .grid-5-cols {
   grid-template-columns: repeat(5, 1fr);
 }
-/* HELPER/SETTINGS CLASSES */

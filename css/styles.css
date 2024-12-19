@@ -639,6 +639,7 @@
   font-weight: 500;
   color: var(--dark-primary-color);
   border-bottom: 2px solid currentColor;
+  padding-bottom: 0.2rem;
 }
 .products__pagination-next:hover,
 .products__pagination-next:active {
