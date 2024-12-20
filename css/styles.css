@@ -648,13 +648,116 @@
 /****************************************** 
   SIGN UP MODAL
 *******************************************/
-.signup-open {
+.signup-remove-scroll {
   overflow: hidden;
 }
-.signup-open .signup-overlay {
-  background-color: rgba(0, 0, 0, 0.7);
+.signup-remove-scroll .signup-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 0;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signup {
+  background-color: var(--lighter-primary-color);
+  padding: 3.2rem;
+  flex-basis: 50rem;
+  position: relative;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+.signup-open .signup {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+.signup__exit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(40%, -40%);
+  padding: 1.2rem 1.5rem;
+  font-size: var(--smaller-text);
+  background-color: var(--lighter-primary-color);
+  border: 1px solid var(--dark-primary-color);
+  transition: all 0.3s;
+}
+.signup__exit:hover,
+.signup__exit:active {
+  background-color: rgb(255, 93, 93);
+  border-color: rgb(255, 93, 93);
+}
+.signup__img {
+  width: 15rem;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 2.4rem;
+}
+.signup__p {
+  font-size: var(--large-text);
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+.signup__email {
+  font-family: inherit;
+  font-size: var(--small-text);
+  font-weight: 400;
+  padding: 0.8rem;
+  border: 1px solid var(--dark-primary-color);
+  margin-bottom: 2.4rem;
+  width: 100%;
+}
+.signup__options {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.signup__icon {
+  color: var(--default-txt-color);
+  font-size: 2rem;
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid var(--default-txt-color);
+}
+.signup__policy-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  font-size: var(--smaller-text);
+  line-height: 1.6;
+  margin-bottom: 2.4rem;
+}
+.signup__checkbox {
+  width: 2rem;
+  height: 2rem;
+}
+.signup__link {
+  color: var(--primary-color);
+  border-bottom: 1px solid currentColor;
+}
+.signup__btn {
+  padding: 1.2rem 2.4rem;
+  border: 1px solid var(--dark-primary-color);
+  background-color: var(--dark-primary-color);
+  color: var(--lighter-primary-color);
+  font-size: var(--small-text);
+  font-weight: 500;
+  /* position: absolute;
+  bottom: 10%;
+  right: 10%; */
+  margin-left: auto;
+  display: block;
+  transition: all 0.3s;
+}
+.signup__btn:hover,
+.signup__btn:active {
+  background-color: var(--default-txt-color);
+  border-color: var(--default-txt-color);
+  cursor: pointer;
 }
