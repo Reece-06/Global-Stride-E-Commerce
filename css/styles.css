@@ -645,3 +645,16 @@
 .products__pagination-next:active {
   color: var(--light-grey);
 }
+/****************************************** 
+  SIGN UP MODAL
+*******************************************/
+.signup-open {
+  overflow: hidden;
+}
+.signup-open .signup-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
