@@ -133,6 +133,10 @@ body {
   color: #0060d6;
   font-size: 2.4rem;
 }
+.default-btn {
+  border: none;
+  background: none;
+}
 .btn {
   border-width: 2px;
   border-style: solid;
