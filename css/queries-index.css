@@ -165,7 +165,7 @@
     overflow-y: scroll;
     flex-direction: column;
     align-items: center;
-    max-height: 500px;
+    max-height: 610px;
     padding: 0;
   }
   .section-new__img {
