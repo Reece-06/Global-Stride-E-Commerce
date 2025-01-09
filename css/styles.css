@@ -78,6 +78,12 @@
   display: block;
   margin: auto 0;
 }
+.header--subnav-mobile-open .header__menu {
+  display: none;
+}
+.header--subnav-mobile-open .header__close {
+  display: block;
+}
 /* SUB NAV FOR MOBILE */
 .header__subnav-mobile {
   position: absolute;
