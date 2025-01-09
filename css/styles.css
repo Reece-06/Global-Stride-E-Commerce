@@ -752,6 +752,7 @@
   height: 100vh;
 
   display: none;
+  z-index: 100;
 }
 .signup-open-overlay .signup-overlay {
   display: block;
