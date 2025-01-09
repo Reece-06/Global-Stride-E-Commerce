@@ -270,7 +270,8 @@
   background-color: var(--darkest-primary-color);
   cursor: pointer;
 }
-.section-new__btns .section-new__btn--open {
+
+.section-new__btn--open {
   color: var(--lighter-primary-color);
   background-color: var(--darkest-primary-color);
 }
