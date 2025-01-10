@@ -754,20 +754,25 @@
   display: none;
   z-index: 100;
 }
+
 .signup-open-overlay .signup-overlay {
   display: block;
 }
+
 .signup {
   background-color: var(--lighter-primary-color);
   padding: 3.2rem;
-  max-width: 50rem;
-  margin: 0 auto;
-  margin-top: 12.8rem;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-top: 20vh;
+  width: 30%;
+  transform: translateX(-50%);
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
   transition: all 0.3s;
+  z-index: 101;
 }
 .signup-open .signup {
   opacity: 1;
