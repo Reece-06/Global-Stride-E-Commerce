@@ -18,6 +18,9 @@
   .footer__container--width {
     max-width: 130rem;
   }
+  .signup {
+    width: 35%;
+  }
 }
 /****************************************** 
   BELOW 1232px (landscape tablets) 
@@ -126,7 +129,7 @@
   }
 }
 /****************************************** 
-  BELOW 720px (tablets) 
+  BELOW 720px (small tablets) 
 *******************************************/
 @media (max-width: 45em) {
   /* 5px / 16px = 0.3125 = 31.25% */
@@ -148,6 +151,13 @@
   }
   .header__menu {
     display: block;
+  }
+  .signup {
+    width: 45%;
+    margin-top: 25vh;
+  }
+  .btn {
+    border-width: 1.5px;
   }
 }
 /****************************************** 
@@ -205,6 +215,9 @@
   .section-popular__link:link,
   .section-popular__link:visited {
     border-bottom: 2px solid currentColor;
+  }
+  .signup {
+    width: 50%;
   }
 }
 /*
