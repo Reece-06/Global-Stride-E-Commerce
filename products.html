@@ -6,6 +6,7 @@
     <title>Global Stride Products</title>
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/queries-products.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,6 +18,7 @@
   <body>
     <!-- HEADER -->
     <!-- To open sub navigation (header--subnav-open) -->
+    <!-- To open sub navigation for mobile users (header--subnav-mobile-open) -->
     <header class="header general-padding">
       <a href="#">
         <img
@@ -54,13 +56,207 @@
             ></ion-icon>
           </a>
         </form>
-        <a href="#">
+        <a href="#" class="header__profile">
           <ion-icon name="person" class="icon"></ion-icon>
         </a>
         <a href="#">
           <ion-icon name="cart" class="icon"></ion-icon>
         </a>
+        <!-- Buttons for mobile nav -->
+        <button class="header__menu default-btn">
+          <ion-icon name="menu" class="header__menu-icon icon"></ion-icon>
+        </button>
+
+        <button class="header__close default-btn">
+          <ion-icon name="close" class="header__close-icon icon"></ion-icon>
+        </button>
       </aside>
+      <!-- Subnav for mobile screens -->
+      <div class="header__subnav-mobile">
+        <nav class="header__subnav-accordions">
+          <div class="header__subnav-accordion">
+            <div class="header__subnav-primary">
+              <a href="#" class="gen-link link">
+                <p class="header__subnav-p">Men</p>
+              </a>
+
+              <button class="header__subnav-btn default-btn">
+                <ion-icon name="chevron-forward" class="icon"></ion-icon>
+              </button>
+            </div>
+            <div class="header__subnav-secondaries">
+              <div class="header__subnav-secondary">
+                <p class="header__subnav-p">Featured</p>
+                <button class="header__subnav-btn default-btn">
+                  <ion-icon
+                    name="chevron-forward"
+                    class="header__subnav-icon icon"
+                  ></ion-icon>
+                </button>
+              </div>
+              <div class="header__subnav-tertiaries">
+                <div class="header__subnav-tertiary">
+                  <p class="header__subnav-p">Featured</p>
+                  <button class="header__subnav-btn default-btn">
+                    <ion-icon
+                      name="chevron-forward"
+                      class="header__subnav-icon icon"
+                    ></ion-icon>
+                  </button>
+                </div>
+                <div class="header__subnav-tertiary">
+                  <p class="header__subnav-p">Featured</p>
+                  <button class="header__subnav-btn default-btn">
+                    <ion-icon
+                      name="chevron-forward"
+                      class="header__subnav-icon icon"
+                    ></ion-icon>
+                  </button>
+                </div>
+              </div>
+              <div class="header__subnav-secondary">
+                <p class="header__subnav-p">Featured</p>
+                <button class="header__subnav-btn default-btn">
+                  <ion-icon
+                    name="chevron-forward"
+                    class="header__subnav-icon icon"
+                  ></ion-icon>
+                </button>
+              </div>
+              <div class="header__subnav-secondary">
+                <p class="header__subnav-p">Featured</p>
+                <button class="header__subnav-btn default-btn">
+                  <ion-icon
+                    name="chevron-forward"
+                    class="header__subnav-icon icon"
+                  ></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="header__subnav-accordion">
+            <div class="header__subnav-primary">
+              <a href="#" class="gen-link link">
+                <p class="header__subnav-p">Men</p>
+              </a>
+
+              <button class="header__subnav-btn default-btn">
+                <ion-icon name="chevron-forward" class="icon"></ion-icon>
+              </button>
+            </div>
+            <div class="header__subnav-secondaries">
+              <div class="header__subnav-secondary">
+                <p class="header__subnav-p">Featured</p>
+                <button class="header__subnav-btn default-btn">
+                  <ion-icon
+                    name="chevron-forward"
+                    class="header__subnav-icon icon"
+                  ></ion-icon>
+                </button>
+              </div>
+              <div class="header__subnav-tertiaries">
+                <div class="header__subnav-tertiary">
+                  <p class="header__subnav-p">Featured</p>
+                  <button class="header__subnav-btn default-btn">
+                    <ion-icon
+                      name="chevron-forward"
+                      class="header__subnav-icon icon"
+                    ></ion-icon>
+                  </button>
+                </div>
+                <div class="header__subnav-tertiary">
+                  <p class="header__subnav-p">Featured</p>
+                  <button class="header__subnav-btn default-btn">
+                    <ion-icon
+                      name="chevron-forward"
+                      class="header__subnav-icon icon"
+                    ></ion-icon>
+                  </button>
+                </div>
+              </div>
+              <div class="header__subnav-secondary">
+                <p class="header__subnav-p">Featured</p>
+                <button class="header__subnav-btn default-btn">
+                  <ion-icon
+                    name="chevron-forward"
+                    class="header__subnav-icon icon"
+                  ></ion-icon>
+                </button>
+              </div>
+              <div class="header__subnav-secondary">
+                <p class="header__subnav-p">Featured</p>
+                <button class="header__subnav-btn default-btn">
+                  <ion-icon
+                    name="chevron-forward"
+                    class="header__subnav-icon icon"
+                  ></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="header__subnav-accordion">
+            <div class="header__subnav-primary">
+              <a href="#" class="gen-link link">
+                <p class="header__subnav-p">Men</p>
+              </a>
+
+              <button class="header__subnav-btn default-btn">
+                <ion-icon name="chevron-forward" class="icon"></ion-icon>
+              </button>
+            </div>
+            <div class="header__subnav-secondaries">
+              <div class="header__subnav-secondary">
+                <p class="header__subnav-p">Featured</p>
+                <button class="header__subnav-btn default-btn">
+                  <ion-icon
+                    name="chevron-forward"
+                    class="header__subnav-icon icon"
+                  ></ion-icon>
+                </button>
+              </div>
+              <div class="header__subnav-tertiaries">
+                <div class="header__subnav-tertiary">
+                  <p class="header__subnav-p">Featured</p>
+                  <button class="header__subnav-btn default-btn">
+                    <ion-icon
+                      name="chevron-forward"
+                      class="header__subnav-icon icon"
+                    ></ion-icon>
+                  </button>
+                </div>
+                <div class="header__subnav-tertiary">
+                  <p class="header__subnav-p">Featured</p>
+                  <button class="header__subnav-btn default-btn">
+                    <ion-icon
+                      name="chevron-forward"
+                      class="header__subnav-icon icon"
+                    ></ion-icon>
+                  </button>
+                </div>
+              </div>
+              <div class="header__subnav-secondary">
+                <p class="header__subnav-p">Featured</p>
+                <button class="header__subnav-btn default-btn">
+                  <ion-icon
+                    name="chevron-forward"
+                    class="header__subnav-icon icon"
+                  ></ion-icon>
+                </button>
+              </div>
+              <div class="header__subnav-secondary">
+                <p class="header__subnav-p">Featured</p>
+                <button class="header__subnav-btn default-btn">
+                  <ion-icon
+                    name="chevron-forward"
+                    class="header__subnav-icon icon"
+                  ></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- Subnav for bigger desktops -->
       <div class="header__subnav">
         <nav class="header__subnav-container grid grid-4-cols">
           <div class="header__subnav-inner">
@@ -524,5 +720,7 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/mobileNavigation.js"></script>
   </body>
 </html>
