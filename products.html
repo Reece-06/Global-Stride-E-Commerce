@@ -342,10 +342,19 @@
           <p class="products__filter-title">Filter Products</p>
           <div class="products__accordions">
             <!-- To open accordion (products__accordion-open) -->
-            <div class="products__accordion products__accordion-open">
+            <div class="products__accordion">
               <div class="products__accordion-upper">
                 <p class="products__accordion-title">Gender</p>
-                <ion-icon name="add" class="products__icon"></ion-icon>
+                <div>
+                  <ion-icon
+                    name="add"
+                    class="products__icon products__add"
+                  ></ion-icon>
+                  <ion-icon
+                    name="remove"
+                    class="products__icon products__remove"
+                  ></ion-icon>
+                </div>
               </div>
 
               <div class="products__accordion-lower">
@@ -370,11 +379,20 @@
             <div class="products__accordion">
               <div class="products__accordion-upper">
                 <p class="products__accordion-title">Gender</p>
-                <ion-icon name="add" class="products__icon"></ion-icon>
+                <div>
+                  <ion-icon
+                    name="add"
+                    class="products__icon products__add"
+                  ></ion-icon>
+                  <ion-icon
+                    name="remove"
+                    class="products__icon products__remove"
+                  ></ion-icon>
+                </div>
               </div>
 
               <div class="products__accordion-lower">
-                <form action="">
+                <form action="" class="products__accordion-form">
                   <div class="products__accordion-indiv-checkbox">
                     <input type="checkbox" name="men-filter" id="men-filter" />
                     <label for="men-filter">Men (42)</label>
@@ -395,11 +413,20 @@
             <div class="products__accordion">
               <div class="products__accordion-upper">
                 <p class="products__accordion-title">Gender</p>
-                <ion-icon name="add" class="products__icon"></ion-icon>
+                <div>
+                  <ion-icon
+                    name="add"
+                    class="products__icon products__add"
+                  ></ion-icon>
+                  <ion-icon
+                    name="remove"
+                    class="products__icon products__remove"
+                  ></ion-icon>
+                </div>
               </div>
 
               <div class="products__accordion-lower">
-                <form action="">
+                <form action="" class="products__accordion-form">
                   <div class="products__accordion-indiv-checkbox">
                     <input type="checkbox" name="men-filter" id="men-filter" />
                     <label for="men-filter">Men (42)</label>
@@ -420,11 +447,20 @@
             <div class="products__accordion">
               <div class="products__accordion-upper">
                 <p class="products__accordion-title">Gender</p>
-                <ion-icon name="add" class="products__icon"></ion-icon>
+                <div>
+                  <ion-icon
+                    name="add"
+                    class="products__icon products__add"
+                  ></ion-icon>
+                  <ion-icon
+                    name="remove"
+                    class="products__icon products__remove"
+                  ></ion-icon>
+                </div>
               </div>
 
               <div class="products__accordion-lower">
-                <form action="">
+                <form action="" class="products__accordion-form">
                   <div class="products__accordion-indiv-checkbox">
                     <input type="checkbox" name="men-filter" id="men-filter" />
                     <label for="men-filter">Men (42)</label>
@@ -722,5 +758,6 @@
     ></script>
     <script src="js/navigation.js"></script>
     <script src="js/mobileNavigation.js"></script>
+    <script src="js/filterAccodions.js"></script>
   </body>
 </html>

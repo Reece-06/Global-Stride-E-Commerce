@@ -599,6 +599,15 @@
   font-size: 2rem;
   --ionicon-stroke-width: 40px;
 }
+.products__remove {
+  display: none;
+}
+.products__accordion-open .products__remove {
+  display: block;
+}
+.products__accordion-open .products__add {
+  display: none;
+}
 .products__accordion-lower {
   display: none;
   background-color: var(--light-primary-color);
