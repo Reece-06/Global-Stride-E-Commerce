@@ -104,6 +104,7 @@ html {
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
 }
+
 body {
   color: var(--default-txt-color);
   font-family: "Inter", sans-serif;

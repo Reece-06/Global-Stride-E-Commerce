@@ -119,6 +119,7 @@
   padding: 1.6rem 3.2rem;
   background-color: #fff;
   border: 1px solid #fff;
+  position: relative;
 }
 
 .header__subnav-p {
@@ -131,6 +132,23 @@
 .header__subnav-icon {
   color: var(--lighter-primary-color);
 }
+.header__subnav-secondaries {
+  display: none;
+}
+.header__subnav-primary--open .header__subnav-secondaries {
+  display: block;
+}
+
+.header__subnav-tertiaries {
+  display: none;
+}
+.header__subnav-secondary--open .header__subnav-tertiaries {
+  display: block;
+}
+.header__subnav-icon--rotate {
+  transform: rotate(90deg);
+}
+
 .header__subnav-secondary {
   padding: 1.6rem 3.2rem;
   display: flex;
