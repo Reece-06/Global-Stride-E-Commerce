@@ -84,22 +84,19 @@
         <nav class="header__subnav-accordions">
           <div class="header__subnav-accordion">
             <!-- To open primary subnav (header__subnav-primary--open) -->
-            <!-- To rotate the arrow -->
-            <div class="header__subnav-primary--open">
+            <!-- To rotate the arrow (header__subnav-icon--rotate) to icon -->
+            <div>
               <div class="header__subnav-primary">
                 <p class="header__subnav-p">Men</p>
 
                 <button class="header__subnav-btn default-btn">
-                  <ion-icon
-                    name="chevron-forward"
-                    class="header__subnav-icon--rotate icon"
-                  ></ion-icon>
+                  <ion-icon name="chevron-forward" class="icon"></ion-icon>
                 </button>
               </div>
 
               <div class="header__subnav-secondaries">
-                <!-- To open tertiary subnavs (header__subnav-secondary--open) -->
-                <div class="header__subnav-secondary--open">
+                <!-- To open secondary subnavs (header__subnav-secondary--open) -->
+                <div>
                   <div class="header__subnav-secondary">
                     <p class="header__subnav-p">Featured</p>
                     <button class="header__subnav-btn default-btn">
@@ -110,23 +107,44 @@
                     </button>
                   </div>
                   <div class="header__subnav-tertiaries">
-                    <div class="header__subnav-tertiary">
-                      <p class="header__subnav-p">Featured</p>
-                      <button class="header__subnav-btn default-btn">
-                        <ion-icon
-                          name="chevron-forward"
-                          class="header__subnav-icon icon"
-                        ></ion-icon>
-                      </button>
+                    <!-- To open tertiary subnavs (header__subnav-tertiary--open) -->
+                    <!-- To hide button (header__subnav-btn--hide) -->
+                    <div>
+                      <div class="header__subnav-tertiary">
+                        <p class="header__subnav-p">Featured</p>
+                        <button class="header__subnav-btn default-btn">
+                          <ion-icon
+                            name="chevron-forward"
+                            class="header__subnav-icon icon"
+                          ></ion-icon>
+                        </button>
+                      </div>
+                      <div class="header__subnav-quaternaries">
+                        <div>
+                          <div class="header__subnav-quaternary">
+                            <p class="header__subnav-p">Featured</p>
+                            <button
+                              class="header__subnav-btn default-btn header__subnav-btn--hide"
+                            >
+                              <ion-icon
+                                name="chevron-forward"
+                                class="header__subnav-icon icon"
+                              ></ion-icon>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="header__subnav-tertiary">
-                      <p class="header__subnav-p">Featured</p>
-                      <button class="header__subnav-btn default-btn">
-                        <ion-icon
-                          name="chevron-forward"
-                          class="header__subnav-icon icon"
-                        ></ion-icon>
-                      </button>
+                    <div>
+                      <div class="header__subnav-tertiary">
+                        <p class="header__subnav-p">Featured</p>
+                        <button class="header__subnav-btn default-btn">
+                          <ion-icon
+                            name="chevron-forward"
+                            class="header__subnav-icon icon"
+                          ></ion-icon>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
