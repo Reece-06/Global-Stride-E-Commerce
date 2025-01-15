@@ -22,6 +22,9 @@
   gap: 3.2rem;
   font-weight: 400;
 }
+.header__link--border-bot .header__link:link {
+  border-color: var(--dark-primary-color);
+}
 .header__link:link,
 .header__link:visited {
   color: var(--default-txt-color);
