@@ -77,12 +77,14 @@
   gap: 0.8rem;
   margin-bottom: 4.8rem;
 }
-.products__breadcrumb-link,
+.products__breadcrumb-link:link,
+.products__breadcrumb-link:visited,
 .products__breadcrumb-span {
   font-size: var(--medium-text);
   font-weight: 400;
 }
-.products__breadcrumb-link {
+.products__breadcrumb-link:link,
+.products__breadcrumb-link:visited {
   color: var(--default-txt-color);
   text-transform: uppercase;
 }
