@@ -67,4 +67,39 @@
   font-size: var(--small-text);
   font-weight: 400;
   line-height: 1.7;
+  margin-bottom: 1.6rem;
+}
+.product-detail__more {
+  color: var(--default-text-color);
+  font-size: var(--small-text);
+  font-weight: 600;
+  font-family: inherit;
+  border-bottom: 1.5px solid currentColor;
+  transition: all 0.3s;
+  margin-bottom: 3.2rem;
+}
+.product-detail__more:hover,
+.product-detail__more:active {
+  color: var(--primary-color);
+}
+.product-detail__colors-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.product-detail__colors {
+  /* grid-template-columns: repeat(5, auto); */
+  row-gap: 1.6rem;
+  column-gap: 1.6rem;
+}
+.product-detail__color-label {
+  font-size: var(--medium-text);
+  font-weight: 500;
+}
+.product-detail__btn-color {
+  font-family: inherit;
+  border: 1px solid currentColor;
+  color: inherit;
+  font-size: var(--small-text);
+  padding: 1.6rem 2.4rem;
 }
