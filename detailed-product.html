@@ -429,15 +429,16 @@
           </button>
           <section class="product-detail__colors-container">
             <p class="product-detail__color-label">Color:</p>
-            <section class="product-detail__colors grid grid-5-cols">
+            <section class="product-detail__colors grid">
+              <!-- press effect of button (product-detail__btn-color--pressed) -->
               <button class="product-detail__btn-color default-btn">
-                Blue
+                Red Blue
               </button>
               <button class="product-detail__btn-color default-btn">
                 Blue
               </button>
               <button class="product-detail__btn-color default-btn">
-                Blue
+                Yellow Green
               </button>
               <button class="product-detail__btn-color default-btn">
                 Blue
@@ -449,23 +450,28 @@
           </section>
           <section class="product-detail__sizes">
             <p class="product-detail__size-label">Sizes</p>
-            <section class="product-detail__size-btns">
-              <button class="product-detail__size-btn">6</button>
-              <button class="product-detail__size-btn">6</button>
-              <button class="product-detail__size-btn">6</button>
-              <button class="product-detail__size-btn">6</button>
-              <button class="product-detail__size-btn">6</button>
+            <section class="product-detail__size-btns grid grid-5-cols">
+              <!-- press effect of button (product-detail__size-btn--pressed) -->
+              <button class="product-detail__size-btn default-btn">6</button>
+              <button class="product-detail__size-btn default-btn">6</button>
+              <button class="product-detail__size-btn default-btn">6</button>
+              <button class="product-detail__size-btn default-btn">6</button>
+              <button class="product-detail__size-btn default-btn">6</button>
             </section>
           </section>
           <section class="product-detail__qty">
             <p class="product-detail__qty-label">Quantity:</p>
             <section class="product-detail__inc-dec">
-              <button class="product-detail__dec-btn">&#8722;</button>
+              <button class="product-detail__dec-btn default-btn">
+                &#8722;
+              </button>
               <span class="product-detail__qty-num">1</span>
-              <button class="product-detail__inc-btn">&#43;</button>
+              <button class="product-detail__inc-btn default-btn">&#43;</button>
             </section>
           </section>
-          <button class="product-detail__add-cart">Add to cart</button>
+          <button class="product-detail__add-cart default-btn">
+            Add to cart
+          </button>
         </section>
       </section>
     </main>
