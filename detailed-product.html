@@ -14,6 +14,7 @@
     />
   </head>
   <body>
+    <!-- NAVBAR -->
     <header class="header general-padding" id="header">
       <a href="#header">
         <img
@@ -359,8 +360,14 @@
         </nav>
       </div>
     </header>
-    <main class="product-detail">
+    <!-- To open more details overlay (product-detail--open-overlay) -->
+    <!-- To open more details content (product-detail--open-details) -->
+    <main
+      class="product-detail product-detail--open-overlay product-detail--open-details"
+    >
+      <!-- MAIN PRODUCT DETAILS -->
       <section class="product-detail__container container grid">
+        <!-- BREADCRUMBS -->
         <section class="product-detail__breadcrumbs">
           <a href="" class="product-detail__breadcrumb link">home</a>
           <span class="product-detail__slash">/</span>
@@ -371,6 +378,7 @@
           <a href="" class="product-detail__breadcrumb link">home</a>
           <span class="product-detail__slash">/</span>
         </section>
+        <!-- GALLERY -->
         <section class="product-detail__gallery grid">
           <div class="product-detail__img-container">
             <img
@@ -415,6 +423,7 @@
             />
           </div>
         </section>
+        <!-- DETAILS -->
         <section class="product-detail__details">
           <p class="product-detail__name">Jacket</p>
           <p class="product-detail__price">&#8369; 1,000</p>
@@ -431,7 +440,10 @@
             <p class="product-detail__color-label">Color:</p>
             <section class="product-detail__colors grid">
               <!-- press effect of button (product-detail__btn-color--pressed) -->
-              <button class="product-detail__btn-color default-btn">
+              <!-- hover effect of button (product-detail__btn-color--hover) -->
+              <button
+                class="product-detail__btn-color product-detail__btn-color--pressed default-btn"
+              >
                 Red Blue
               </button>
               <button class="product-detail__btn-color default-btn">
@@ -452,6 +464,7 @@
             <p class="product-detail__size-label">Sizes</p>
             <section class="product-detail__size-btns grid grid-5-cols">
               <!-- press effect of button (product-detail__size-btn--pressed) -->
+              <!-- hover effect of button (product-detail__size-btn--hover) -->
               <button class="product-detail__size-btn default-btn">6</button>
               <button class="product-detail__size-btn default-btn">6</button>
               <button class="product-detail__size-btn default-btn">6</button>
@@ -474,8 +487,11 @@
           </button>
         </section>
       </section>
+      <div class="product-detail__overlay"></div>
+      <div class="product-detail__more-details"></div>
     </main>
-    <!-- <footer class="footer">
+    <!-- FOOTER -->
+    <footer class="footer">
       <div
         class="footer__container container footer__container--width grid footer__container--grid-temp"
       >
@@ -537,7 +553,7 @@
           </ul>
         </section>
       </div>
-    </footer> -->
+    </footer>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -548,5 +564,6 @@
     ></script>
     <script src="js/navigation.js"></script>
     <script src="js/mobile-navigation.js"></script>
+    <script src="js/buttons-detailed.js"></script>
   </body>
 </html>
