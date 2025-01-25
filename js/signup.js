@@ -7,7 +7,7 @@ const signupBtn = document.querySelector(".section-cta__btn");
 const profileIcon = document.querySelector(".header__profile");
 const body = document.querySelector("body");
 
-const signupExit = document.querySelector(".signup__exit");
+const signupExit = document.querySelector(".exit");
 
 const profileBtn = document.querySelector(".header__profile");
 
