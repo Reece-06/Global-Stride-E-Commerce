@@ -175,6 +175,22 @@ body {
 .tag-new {
   background-color: rgb(255, 255, 84);
 }
+.exit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(40%, -40%);
+  padding: 1.2rem 1.5rem;
+  font-size: var(--smaller-text);
+  background-color: var(--lighter-primary-color);
+  border: 1px solid var(--dark-primary-color);
+  transition: all 0.3s;
+}
+.exit:hover,
+.exit:active {
+  background-color: rgb(255, 93, 93);
+  border-color: rgb(255, 93, 93);
+}
 /* Reusable Grid */
 
 .grid {

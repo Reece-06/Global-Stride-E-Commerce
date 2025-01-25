@@ -221,6 +221,9 @@
   cursor: pointer;
 }
 /* MORE DETAILS */
+.product-detail--remove-scroll {
+  overflow: hidden;
+}
 .product-detail__overlay {
   display: none;
   position: absolute;
@@ -233,4 +236,92 @@
 }
 .product-detail--open-overlay .product-detail__overlay {
   display: block;
+}
+.product-detail__more-container {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+.product-detail--open-details .product-detail__more-container {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+.product-detail__more-details {
+  background-color: var(--lighter-primary-color);
+  width: 60%;
+  padding: 4.8rem;
+  position: relative;
+}
+.product-detail__general-details {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 2.4rem;
+}
+.product-detail__more-img {
+  width: 10%;
+  height: 10%;
+}
+
+.product-detail__name-price {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.product-detail__more-name {
+  font-size: var(--large-small-text);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.product-detail__more-price {
+  font-size: var(--small-text);
+  color: var(--light-grey);
+}
+.product-detail__more-description {
+  font-size: var(--smaller-text);
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 1.6rem;
+}
+.product-detail__features-label {
+  font-size: var(--smaller-text);
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+.product-detail__features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1.6rem;
+  margin-left: 2rem;
+}
+.product-detail__feature {
+  font-size: var(--smaller-text);
+  font-weight: 400;
+}
+.product-detail__info-label {
+  font-size: var(--smaller-text);
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+.product-detail__infos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-left: 2rem;
+}
+.product-detail__info {
+  font-size: var(--smaller-text);
+  font-weight: 400;
 }

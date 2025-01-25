@@ -13,7 +13,12 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <!-- To open more details overlay (product-detail--open-overlay) -->
+  <!-- To open more details content (product-detail--open-details) -->
+  <!-- To remove scrollbar (product-detail--remove-scroll) -->
+  <body
+    class="product-detail--open-overlay product-detail--open-details product-detail--remove-scroll"
+  >
     <!-- NAVBAR -->
     <header class="header general-padding" id="header">
       <a href="#header">
@@ -360,11 +365,8 @@
         </nav>
       </div>
     </header>
-    <!-- To open more details overlay (product-detail--open-overlay) -->
-    <!-- To open more details content (product-detail--open-details) -->
-    <main
-      class="product-detail product-detail--open-overlay product-detail--open-details"
-    >
+
+    <main class="product-detail">
       <!-- MAIN PRODUCT DETAILS -->
       <section class="product-detail__container container grid">
         <!-- BREADCRUMBS -->
@@ -441,9 +443,7 @@
             <section class="product-detail__colors grid">
               <!-- press effect of button (product-detail__btn-color--pressed) -->
               <!-- hover effect of button (product-detail__btn-color--hover) -->
-              <button
-                class="product-detail__btn-color product-detail__btn-color--pressed default-btn"
-              >
+              <button class="product-detail__btn-color default-btn">
                 Red Blue
               </button>
               <button class="product-detail__btn-color default-btn">
@@ -487,8 +487,6 @@
           </button>
         </section>
       </section>
-      <div class="product-detail__overlay"></div>
-      <div class="product-detail__more-details"></div>
     </main>
     <!-- FOOTER -->
     <footer class="footer">
@@ -554,6 +552,62 @@
         </section>
       </div>
     </footer>
+    <div class="product-detail__overlay"></div>
+    <div class="product-detail__more-container">
+      <div class="product-detail__more-details">
+        <section class="product-detail__general-details">
+          <img
+            src="imgs/products/product-cap1.png"
+            alt=""
+            class="product-detail__more-img"
+          />
+          <aside class="product-detail__name-price">
+            <p class="product-detail__more-name">Cap</p>
+            <p class="product-detail__more-price">&#8369; 1,000</p>
+          </aside>
+        </section>
+        <p class="product-detail__more-description">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+          dolorem quisquam eaque optio aliquid odit sint quae placeat? Animi
+          nostrum perspiciatis, dolorem odit minus maxime eligendi laborum vero
+          aut libero.
+        </p>
+        <p class="product-detail__features-label">Key Features</p>
+        <ul class="product-detail__features">
+          <li class="product-detail__feature">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </li>
+          <li class="product-detail__feature">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </li>
+          <li class="product-detail__feature">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </li>
+          <li class="product-detail__feature">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </li>
+          <li class="product-detail__feature">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </li>
+        </ul>
+        <p class="product-detail__info-label">Product Details</p>
+        <ul class="product-detail__infos">
+          <li class="product-detail__info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </li>
+          <li class="product-detail__info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </li>
+          <li class="product-detail__info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </li>
+          <li class="product-detail__info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </li>
+        </ul>
+        <button class="exit">&#10006;</button>
+      </div>
+    </div>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
