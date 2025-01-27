@@ -8,6 +8,10 @@
   position: relative;
   z-index: 2;
 }
+
+.header__a {
+  align-self: center;
+}
 .header__img {
   width: var(--logo-size);
 }
@@ -713,4 +717,21 @@
   background-color: var(--default-txt-color);
   border-color: var(--default-txt-color);
   cursor: pointer;
+}
+
+/* STICKY HEADER */
+
+.sticky .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--lighter-primary-color-transparent);
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.1);
+  height: 10rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.sticky .section-hero {
+  margin-top: 10rem;
 }

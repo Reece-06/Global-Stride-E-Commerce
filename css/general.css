@@ -64,7 +64,7 @@ Medium:
   --darkest-primary-color: #00132b;
   --light-primary-color: #ccdff7;
   --lighter-primary-color: #e6effb;
-
+  --lighter-primary-color-transparent: rgba(230, 239, 251, 0.9);
   /* Text */
   --default-txt-color: #333;
   --light-grey: #888;
