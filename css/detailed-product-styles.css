@@ -42,6 +42,19 @@
   grid-template-rows: repeat(6, auto);
   gap: 1.2rem;
 }
+.product-detail__secret-gallery{
+  display: none;
+}
+.product-detail__container--sticky .product-detail__secret-gallery{
+  display: block;
+}
+.product-detail__container--sticky .product-detail__gallery{
+  position: fixed;
+  top: 25%;
+  left: 10%;
+  width: 40%;
+}
+
 .product-detail__img-container-main {
   grid-column: 2;
   grid-row: 1/-1;

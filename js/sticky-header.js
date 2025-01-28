@@ -14,6 +14,7 @@ const obs = new IntersectionObserver(
   {
     root: null,
     threshold: 0,
+    rootMargin: "-100px",
   }
 );
 obs.observe(hero);
