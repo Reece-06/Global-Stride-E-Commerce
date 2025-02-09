@@ -137,6 +137,7 @@ body {
 .default-btn {
   border: none;
   background: none;
+  display: inline-block;
 }
 .btn {
   border-width: 2px;

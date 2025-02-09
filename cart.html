@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/cart-styles.css" />
+    <link rel="stylesheet" href="css/queries-cart.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header general-padding" id="header">
+      <a href="#header">
+        <img
+          src="imgs/logo-alternative.png"
+          alt="Global Stride company logo"
+          class="header__img"
+        />
+      </a>
+      <nav class="header__nav">
+        <ul class="header__list list">
+          <!-- To add border bottom when link is hovered (header__link--border-bot) -->
+          <li>
+            <a href="#" class="header__link link">Men</a>
+          </li>
+          <li>
+            <a href="#" class="header__link link">Women</a>
+          </li>
+          <li>
+            <a href="#" class="header__link link">Kids</a>
+          </li>
+          <li>
+            <a href="#" class="header__link link">New & Trending</a>
+          </li>
+          <li>
+            <a href="#" class="header__link link">Sale</a>
+          </li>
+        </ul>
+      </nav>
+      <aside class="header__aside">
+        <form class="header__form">
+          <input type="text" placeholder="Search" class="header__search" />
+          <a href="#">
+            <ion-icon
+              name="search"
+              class="header__search--icon icon"
+            ></ion-icon>
+          </a>
+        </form>
+        <a href="#" class="header__profile">
+          <ion-icon name="person" class="icon"></ion-icon>
+        </a>
+        <a href="#">
+          <ion-icon name="cart" class="icon"></ion-icon>
+        </a>
+        <!-- Buttons for mobile nav -->
+        <button class="header__menu default-btn">
+          <ion-icon name="menu" class="header__menu-icon icon"></ion-icon>
+        </button>
+
+        <button class="header__close default-btn">
+          <ion-icon name="close" class="header__close-icon icon"></ion-icon>
+        </button>
+      </aside>
+      <!-- Subnav for mobile screens -->
+      <div class="header__subnav-mobile">
+        <nav class="header__subnav-accordions">
+          <div class="header__subnav-accordion">
+            <!-- To open primary subnav (header__subnav-primary--open) -->
+            <!-- To rotate the arrow (header__subnav-icon--rotate) to icon -->
+            <div>
+              <div class="header__subnav-primary">
+                <p class="header__subnav-p">Men</p>
+
+                <button class="header__subnav-btn default-btn">
+                  <ion-icon name="chevron-forward" class="icon"></ion-icon>
+                </button>
+              </div>
+
+              <div class="header__subnav-secondaries">
+                <!-- To open secondary subnavs (header__subnav-secondary--open) -->
+                <div>
+                  <div class="header__subnav-secondary">
+                    <p class="header__subnav-p">Featured</p>
+                    <button class="header__subnav-btn default-btn">
+                      <ion-icon
+                        name="chevron-forward"
+                        class="header__subnav-icon icon"
+                      ></ion-icon>
+                    </button>
+                  </div>
+                  <div class="header__subnav-tertiaries">
+                    <!-- To open tertiary subnavs (header__subnav-tertiary--open) -->
+                    <!-- To hide button (header__subnav-btn--hide) -->
+                    <div>
+                      <div class="header__subnav-tertiary">
+                        <p class="header__subnav-p">Featured</p>
+                        <button class="header__subnav-btn default-btn">
+                          <ion-icon
+                            name="chevron-forward"
+                            class="header__subnav-icon icon"
+                          ></ion-icon>
+                        </button>
+                      </div>
+                      <div class="header__subnav-quaternaries">
+                        <div>
+                          <div class="header__subnav-quaternary">
+                            <p class="header__subnav-p">Featured</p>
+                            <button
+                              class="header__subnav-btn default-btn header__subnav-btn--hide"
+                            >
+                              <ion-icon
+                                name="chevron-forward"
+                                class="header__subnav-icon icon"
+                              ></ion-icon>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="header__subnav-tertiary">
+                        <p class="header__subnav-p">Featured</p>
+                        <button class="header__subnav-btn default-btn">
+                          <ion-icon
+                            name="chevron-forward"
+                            class="header__subnav-icon icon"
+                          ></ion-icon>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__subnav-accordion">
+            <!-- To open primary subnav (header__subnav-primary--open) -->
+            <!-- To rotate the arrow (header__subnav-icon--rotate) to icon -->
+            <div>
+              <div class="header__subnav-primary">
+                <p class="header__subnav-p">Men</p>
+
+                <button class="header__subnav-btn default-btn">
+                  <ion-icon name="chevron-forward" class="icon"></ion-icon>
+                </button>
+              </div>
+
+              <div class="header__subnav-secondaries">
+                <!-- To open secondary subnavs (header__subnav-secondary--open) -->
+                <div>
+                  <div class="header__subnav-secondary">
+                    <p class="header__subnav-p">Featured</p>
+                    <button class="header__subnav-btn default-btn">
+                      <ion-icon
+                        name="chevron-forward"
+                        class="header__subnav-icon icon"
+                      ></ion-icon>
+                    </button>
+                  </div>
+                  <div class="header__subnav-tertiaries">
+                    <!-- To open tertiary subnavs (header__subnav-tertiary--open) -->
+                    <!-- To hide button (header__subnav-btn--hide) -->
+                    <div>
+                      <div class="header__subnav-tertiary">
+                        <p class="header__subnav-p">Featured</p>
+                        <button class="header__subnav-btn default-btn">
+                          <ion-icon
+                            name="chevron-forward"
+                            class="header__subnav-icon icon"
+                          ></ion-icon>
+                        </button>
+                      </div>
+                      <div class="header__subnav-quaternaries">
+                        <div>
+                          <div class="header__subnav-quaternary">
+                            <p class="header__subnav-p">Featured</p>
+                            <button
+                              class="header__subnav-btn default-btn header__subnav-btn--hide"
+                            >
+                              <ion-icon
+                                name="chevron-forward"
+                                class="header__subnav-icon icon"
+                              ></ion-icon>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="header__subnav-tertiary">
+                        <p class="header__subnav-p">Featured</p>
+                        <button class="header__subnav-btn default-btn">
+                          <ion-icon
+                            name="chevron-forward"
+                            class="header__subnav-icon icon"
+                          ></ion-icon>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__subnav-accordion">
+            <!-- To open primary subnav (header__subnav-primary--open) -->
+            <!-- To rotate the arrow (header__subnav-icon--rotate) to icon -->
+            <div>
+              <div class="header__subnav-primary">
+                <p class="header__subnav-p">Men</p>
+
+                <button class="header__subnav-btn default-btn">
+                  <ion-icon name="chevron-forward" class="icon"></ion-icon>
+                </button>
+              </div>
+
+              <div class="header__subnav-secondaries">
+                <!-- To open secondary subnavs (header__subnav-secondary--open) -->
+                <div>
+                  <div class="header__subnav-secondary">
+                    <p class="header__subnav-p">Featured</p>
+                    <button class="header__subnav-btn default-btn">
+                      <ion-icon
+                        name="chevron-forward"
+                        class="header__subnav-icon icon"
+                      ></ion-icon>
+                    </button>
+                  </div>
+                  <div class="header__subnav-tertiaries">
+                    <!-- To open tertiary subnavs (header__subnav-tertiary--open) -->
+                    <!-- To hide button (header__subnav-btn--hide) -->
+                    <div>
+                      <div class="header__subnav-tertiary">
+                        <p class="header__subnav-p">Featured</p>
+                        <button class="header__subnav-btn default-btn">
+                          <ion-icon
+                            name="chevron-forward"
+                            class="header__subnav-icon icon"
+                          ></ion-icon>
+                        </button>
+                      </div>
+                      <div class="header__subnav-quaternaries">
+                        <div>
+                          <div class="header__subnav-quaternary">
+                            <p class="header__subnav-p">Featured</p>
+                            <button
+                              class="header__subnav-btn default-btn header__subnav-btn--hide"
+                            >
+                              <ion-icon
+                                name="chevron-forward"
+                                class="header__subnav-icon icon"
+                              ></ion-icon>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="header__subnav-tertiary">
+                        <p class="header__subnav-p">Featured</p>
+                        <button class="header__subnav-btn default-btn">
+                          <ion-icon
+                            name="chevron-forward"
+                            class="header__subnav-icon icon"
+                          ></ion-icon>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- Subnav for bigger desktops -->
+      <div class="header__subnav">
+        <nav class="header__subnav-container grid grid-4-cols">
+          <div class="header__subnav-inner">
+            <p class="header__subnav-title">New Arrivals & Best Sellers</p>
+            <ul class="header__subnav-links list">
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__subnav-inner">
+            <p class="header__subnav-title">Shoes</p>
+            <ul class="header__subnav-links list">
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__subnav-inner">
+            <p class="header__subnav-title">Clothes</p>
+            <ul class="header__subnav-links list">
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__subnav-inner">
+            <p class="header__subnav-title">Accessories</p>
+            <ul class="header__subnav-links list">
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+              <li>
+                <a href="#" class="header__subnav-link link gen-link">Hello</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="cart">
+      <section class="cart__container container grid grid-2-cols">
+        <section class="cart__items">
+          <div class="cart__item">
+            <h1 class="cart__items-label">Bag</h1>
+            <div class="cart__info">
+              <img
+                src="imgs/products/product-cap1.png"
+                alt="Cap"
+                class="cart__img"
+              />
+              <div class="cart__detailed-info">
+                <p class="cart__item-name">Cap</p>
+                <p class="cart__item-category">Men's Road Racing Shoes</p>
+                <p class="cart__item-color">
+                  White/Black/Unicersity Red/Habanero
+                </p>
+                <p class="cart__item-size">Size M 7.5</p>
+              </div>
+              <p class="cart__price">&#8369; 260.00</p>
+              <div class="cart__qty-btn">
+                <button class="cart__delete default-btn">
+                  <ion-icon name="trash"></ion-icon>
+                </button>
+                <button class="cart__decrease default-btn">
+                  <ion-icon name="remove"></ion-icon>
+                </button>
+                <p class="cart__qty-num">1</p>
+                <button class="cart__increase default-btn">
+                  <ion-icon name="add"></ion-icon>
+                </button>
+              </div>
+              <p class="cart__shipping-label">Shipping</p>
+              <p class="cart__shipping-info">Arrives by Fri, Feb 14 to 1001</p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer class="footer">
+      <div
+        class="footer__container container footer__container--width grid footer__container--grid-temp"
+      >
+        <section class="footer__logo-sc">
+          <a href="#header">
+            <img
+              src="imgs/logo-alternative.png"
+              alt="Global Stride company logo"
+              class="footer__logo"
+            />
+          </a>
+          <p class="footer__p">Follow us</p>
+          <div class="footer__icons">
+            <a href="#"
+              ><ion-icon name="logo-facebook" class="footer__icon"></ion-icon
+            ></a>
+            <a href="#"
+              ><ion-icon name="logo-twitter" class="footer__icon"></ion-icon
+            ></a>
+            <a href="#"
+              ><ion-icon name="logo-instagram" class="footer__icon"></ion-icon
+            ></a>
+          </div>
+        </section>
+        <section class="footer__products">
+          <h3 class="footer__link-heading">Products</h3>
+          <ul class="footer__links list">
+            <li><a href="" class="footer__link link gen-link">Hello</a></li>
+            <li><a href="" class="footer__link link gen-link">Hello</a></li>
+            <li><a href="" class="footer__link link gen-link">Hello</a></li>
+            <li><a href="" class="footer__link link gen-link">Hello</a></li>
+          </ul>
+        </section>
+        <section class="footer__men">
+          <h3 class="footer__link-heading">Men</h3>
+          <ul class="footer__links list">
+            <li><a href="" class="footer__link link gen-link">Hello</a></li>
+            <li><a href="" class="footer__link link gen-link">Hello</a></li>
+            <li><a href="" class="footer__link link gen-link">Hello</a></li>
+            <li><a href="" class="footer__link link gen-link">Hello</a></li>
+          </ul>
+        </section>
+        <section class="footer__women">
+          <h3 class="footer__link-heading">Women</h3>
+          <ul class="footer__links list">
+            <li><a href="" class="footer__link link gen-link">Hello</a></li>
+            <li><a href="" class="footer__link link gen-link">Hello</a></li>
+            <li><a href="" class="footer__link link gen-link">Hello</a></li>
+            <li><a href="" class="footer__link link gen-link">Hello</a></li>
+          </ul>
+        </section>
+        <section class="footer__kids">
+          <h3 class="footer__link-heading">Kids</h3>
+          <ul class="footer__links list">
+            <li><a href="" class="footer__link link gen-link">Hello</a></li>
+            <li><a href="" class="footer__link link gen-link">Hello</a></li>
+            <li><a href="" class="footer__link link gen-link">Hello</a></li>
+            <li><a href="" class="footer__link link gen-link">Hello</a></li>
+          </ul>
+        </section>
+      </div>
+    </footer>
+    <div class="checkout">
+      <section class="checkout__left-content">
+        <img
+          src="imgs/logo-alternative.png"
+          alt="Global Stride Logo"
+          class="checkout__logo"
+        />
+        <div class="checkout__labels">
+          <p class="checkout__shipping-label">1. Shipping</p>
+          <p class="checkout__delivery-label">2. Delivery</p>
+          <p class="checkout__payment-label">3. Payment</p>
+        </div>
+        <form action="#" method="post">
+          <div class="checkout__upper-inputs">
+            <input type="email" name="email" id="" />
+            <div class="checkout__phone-num-inputs">
+              <select
+                name="phone-country"
+                id=""
+                class="checkout__phone-country"
+              >
+                <option value="ph">PH</option>
+                <option value="us">USA</option>
+              </select>
+              <input type="number" name="phone-number" id="" />
+            </div>
+            <input type="text" name="first-name" id="" />
+            <input type="text" name="last-name" id="" />
+            <input type="text" name="address" id="" />
+            <div class="checkout__country-inputs">
+              <select name="coutry" id="" class="checkout__country-input">
+                <option value="Philippines">Philippines</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Philippines">Philippines</option>
+              </select>
+              <div class="checkout__up-down">
+                <ion-icon name="caret-up"></ion-icon>
+                <ion-icon name="caret-down"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <button class="checkout__optional-btn default-btn">
+            &#43; Apartment, building, floor
+          </button>
+          <input type="text" name="apartment" id="" />
+          <div class="checkout__lower-input">
+            <input type="number" name="zip" id="" />
+            <input type="text" name="city" id="" />
+            <select name="state" id="" class="checkout__state-input">
+              <option value="fl">FL</option>
+              <option value="fl">FL</option>
+              <option value="fl">FL</option>
+            </select>
+            <div class="checkout__up-down">
+              <ion-icon name="caret-up"></ion-icon>
+              <ion-icon name="caret-down"></ion-icon>
+            </div>
+          </div>
+          <button class="checkout__continue">Continue</button>
+        </form>
+      </section>
+      <section class="checkout__right-content">
+        <h1 class="checkout__summary-label">Order Summary</h1>
+        <div class="checkout__item-summary">
+          <img src="imgs/products/product-cap1.png" alt="Cap" />
+          <div class="checkout__item-name-qty">
+            <p class="checkout__item-summ-name">Cap</p>
+            <p class="checkout__item-summ-qty">Quantity: 1</p>
+          </div>
+          <p class="checkout__item-summ-price">&#8369; 150.00</p>
+        </div>
+        <hr class="checkout__divider" />
+      </section>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
