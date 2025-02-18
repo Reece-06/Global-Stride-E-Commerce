@@ -138,6 +138,7 @@ body {
   border: none;
   background: none;
   display: inline-block;
+  cursor: pointer;
 }
 .btn {
   border-width: 2px;

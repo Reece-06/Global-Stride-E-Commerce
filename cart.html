@@ -360,41 +360,122 @@
       </div>
     </header>
     <main class="cart">
-      <section class="cart__container container grid grid-2-cols">
+      <section class="cart__container container grid">
         <section class="cart__items">
+          <h1 class="cart__items-label">Bag</h1>
           <div class="cart__item">
-            <h1 class="cart__items-label">Bag</h1>
             <div class="cart__info">
-              <img
-                src="imgs/products/product-cap1.png"
-                alt="Cap"
-                class="cart__img"
-              />
-              <div class="cart__detailed-info">
-                <p class="cart__item-name">Cap</p>
-                <p class="cart__item-category">Men's Road Racing Shoes</p>
-                <p class="cart__item-color">
-                  White/Black/Unicersity Red/Habanero
+              <div class="cart__upper-item-info grid">
+                <img
+                  src="imgs/products/product-cap1.png"
+                  alt="Cap"
+                  class="cart__img"
+                />
+                <div class="cart__detailed-info">
+                  <p class="cart__item-name">Cap</p>
+                  <p class="cart__item-category">Men's Road Racing Shoes</p>
+                  <p class="cart__item-color">
+                    White/Black/Unicersity Red/Habanero
+                  </p>
+                  <p class="cart__item-size">Size M 7.5</p>
+                </div>
+                <p class="cart__price">&#8369; 260000000.00</p>
+                <!-- To show delete button (cart__qty-btn--show-del) -->
+                <div class="cart__qty-btns">
+                  <button class="cart__qty-btn cart__delete default-btn">
+                    <ion-icon name="trash"></ion-icon>
+                  </button>
+                  <button class="cart__qty-btn cart__decrease default-btn">
+                    <ion-icon name="remove"></ion-icon>
+                  </button>
+                  <p class="cart__qty-num">1</p>
+                  <button class="cart__qty-btn cart__increase default-btn">
+                    <ion-icon name="add"></ion-icon>
+                  </button>
+                </div>
+              </div>
+              <div class="cart__lower-item-info">
+                <p class="cart__shipping-label">Shipping</p>
+                <p class="cart__shipping-info">
+                  Arrives by Fri, Feb 14 to 1001
                 </p>
-                <p class="cart__item-size">Size M 7.5</p>
               </div>
-              <p class="cart__price">&#8369; 260.00</p>
-              <div class="cart__qty-btn">
-                <button class="cart__delete default-btn">
-                  <ion-icon name="trash"></ion-icon>
-                </button>
-                <button class="cart__decrease default-btn">
-                  <ion-icon name="remove"></ion-icon>
-                </button>
-                <p class="cart__qty-num">1</p>
-                <button class="cart__increase default-btn">
-                  <ion-icon name="add"></ion-icon>
-                </button>
-              </div>
-              <p class="cart__shipping-label">Shipping</p>
-              <p class="cart__shipping-info">Arrives by Fri, Feb 14 to 1001</p>
             </div>
           </div>
+          <hr class="cart__divider" />
+          <div class="cart__item">
+            <div class="cart__info">
+              <div class="cart__upper-item-info grid">
+                <img
+                  src="imgs/products/product-cap1.png"
+                  alt="Cap"
+                  class="cart__img"
+                />
+                <div class="cart__detailed-info">
+                  <p class="cart__item-name">Cap</p>
+                  <p class="cart__item-category">Men's Road Racing Shoes</p>
+                  <p class="cart__item-color">
+                    White/Black/Unicersity Red/Habanero
+                  </p>
+                  <p class="cart__item-size">Size M 7.5</p>
+                </div>
+                <p class="cart__price">&#8369; 260000000.00</p>
+                <!-- To show delete button (cart__qty-btn--show-del) -->
+                <div class="cart__qty-btns">
+                  <button class="cart__qty-btn cart__delete default-btn">
+                    <ion-icon name="trash"></ion-icon>
+                  </button>
+                  <button class="cart__qty-btn cart__decrease default-btn">
+                    <ion-icon name="remove"></ion-icon>
+                  </button>
+                  <p class="cart__qty-num">12</p>
+                  <button class="cart__qty-btn cart__increase default-btn">
+                    <ion-icon name="add"></ion-icon>
+                  </button>
+                </div>
+              </div>
+              <div class="cart__lower-item-info">
+                <p class="cart__shipping-label">Shipping</p>
+                <p class="cart__shipping-info">
+                  Arrives by Fri, Feb 14 to 1001
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="cart__summary">
+          <h1 class="cart__summary-label">Summary</h1>
+          <div class="cart__upper-summary">
+            <p class="cart__subtotal">
+              Subtotal
+              <span class="cart__icon-container"
+                ><ion-icon name="help-outline"></ion-icon
+              ></span>
+            </p>
+            <p class="cart__subtotal-price">&#8369;520.00</p>
+            <p class="cart__ship-handle">Estimated Shipping & Handling</p>
+            <p class="cart__ship-handle-price">Free</p>
+            <p class="cart__tax">
+              Estimated Tax
+              <span class="cart__icon-container"
+                ><ion-icon name="help-outline"></ion-icon
+              ></span>
+            </p>
+            <p class="cart__tax-price">--</p>
+          </div>
+          <hr class="cart__divider" />
+          <div class="cart__total-container">
+            <p class="cart__total">Total</p>
+            <p class="cart__total-price">&#8369;520.00</p>
+          </div>
+          <hr class="cart__divider" />
+          <button class="cart__checkout-btn default-btn">Checkout</button>
+          <p class="cart__summary-extra-info">
+            By selecting one of the above payment options, you confirm that you
+            have read, understand, and agree to Global Stride’s Terms of Use,
+            Terms of Sale and Return Policy, and acknowledge Global Stride’s
+            Privacy Policy.
+          </p>
         </section>
       </section>
     </main>
