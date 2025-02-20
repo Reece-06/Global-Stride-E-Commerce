@@ -379,18 +379,18 @@
                   </p>
                   <p class="cart__item-size">Size M 7.5</p>
                 </div>
-                <p class="cart__price">&#8369; 260000000.00</p>
+                <p class="cart__price">&#8369; 26000.00</p>
                 <!-- To show delete button (cart__qty-btn--show-del) -->
                 <div class="cart__qty-btns">
                   <button class="cart__qty-btn cart__delete default-btn">
-                    <ion-icon name="trash"></ion-icon>
+                    <ion-icon name="trash" class="cart__icon"></ion-icon>
                   </button>
                   <button class="cart__qty-btn cart__decrease default-btn">
-                    <ion-icon name="remove"></ion-icon>
+                    <ion-icon name="remove" class="cart__icon"></ion-icon>
                   </button>
                   <p class="cart__qty-num">1</p>
                   <button class="cart__qty-btn cart__increase default-btn">
-                    <ion-icon name="add"></ion-icon>
+                    <ion-icon name="add" class="cart__icon"></ion-icon>
                   </button>
                 </div>
               </div>
@@ -419,18 +419,18 @@
                   </p>
                   <p class="cart__item-size">Size M 7.5</p>
                 </div>
-                <p class="cart__price">&#8369; 260000000.00</p>
+                <p class="cart__price">&#8369; 26000.00</p>
                 <!-- To show delete button (cart__qty-btn--show-del) -->
                 <div class="cart__qty-btns">
                   <button class="cart__qty-btn cart__delete default-btn">
-                    <ion-icon name="trash"></ion-icon>
+                    <ion-icon name="trash" class="cart__icon"></ion-icon>
                   </button>
                   <button class="cart__qty-btn cart__decrease default-btn">
-                    <ion-icon name="remove"></ion-icon>
+                    <ion-icon name="remove" class="cart__icon"></ion-icon>
                   </button>
-                  <p class="cart__qty-num">12</p>
+                  <p class="cart__qty-num">1</p>
                   <button class="cart__qty-btn cart__increase default-btn">
-                    <ion-icon name="add"></ion-icon>
+                    <ion-icon name="add" class="cart__icon"></ion-icon>
                   </button>
                 </div>
               </div>
@@ -445,26 +445,33 @@
         </section>
         <section class="cart__summary">
           <h1 class="cart__summary-label">Summary</h1>
-          <div class="cart__upper-summary">
-            <p class="cart__subtotal">
-              Subtotal
-              <span class="cart__icon-container"
-                ><ion-icon name="help-outline"></ion-icon
-              ></span>
-            </p>
-            <p class="cart__subtotal-price">&#8369;520.00</p>
+          <div class="cart__upper-summary grid">
+            <div class="cart__subtotal-container">
+              <p class="cart__subtotal">Subtotal</p>
+              <aside
+                class="cart__tooltip"
+                data-text="The subtotal reflects the total price of your order before any applicable discounts. It does not include shipping costs and taxes."
+              >
+                <ion-icon name="help-outline" class="cart__question"></ion-icon>
+              </aside>
+            </div>
+
+            <p class="cart__subtotal-price">&#8369;5200000.00</p>
             <p class="cart__ship-handle">Estimated Shipping & Handling</p>
             <p class="cart__ship-handle-price">Free</p>
-            <p class="cart__tax">
-              Estimated Tax
-              <span class="cart__icon-container"
-                ><ion-icon name="help-outline"></ion-icon
-              ></span>
-            </p>
+            <div class="cart__subtotal-container">
+              <p class="cart__tax">Estimated Tax</p>
+              <aside
+                class="cart__tooltip"
+                data-text="The actual tax will be calculated based on the applicable state and local sales taxes when your order is shipped."
+              >
+                <ion-icon name="help-outline" class="cart__question"></ion-icon>
+              </aside>
+            </div>
             <p class="cart__tax-price">--</p>
           </div>
           <hr class="cart__divider" />
-          <div class="cart__total-container">
+          <div class="cart__total-container grid">
             <p class="cart__total">Total</p>
             <p class="cart__total-price">&#8369;520.00</p>
           </div>
