@@ -91,6 +91,10 @@ Medium:
   --default-white-space: 12.8rem;
   --small-white-space: 9.6rem;
   --smallest-white-space: 4.8rem;
+
+  /* Fixed Heights */
+  --nav-height: 11rem;
+  --footer-height: 45rem;
 }
 * {
   margin: 0;

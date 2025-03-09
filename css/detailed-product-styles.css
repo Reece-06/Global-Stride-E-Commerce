@@ -1,5 +1,6 @@
 .product-detail {
   padding: var(--smallest-white-space) 0;
+  min-height: calc(100vh - var(--nav-height) - var(--footer-height));
 }
 .product-detail__container {
   grid-template-columns: repeat(2, 1fr);

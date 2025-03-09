@@ -7,6 +7,7 @@
   background-color: var(--lighter-primary-color);
   position: relative;
   z-index: 2;
+  height: var(--nav-height);
 }
 
 .header__a {
@@ -561,6 +562,7 @@
   padding-top: var(--smallest-white-space);
   padding-bottom: var(--smallest-white-space);
   background-color: var(--lighter-primary-color);
+  height: var(--footer-height);
 }
 .footer__container {
   padding: 0 var(--default-hori-padding);

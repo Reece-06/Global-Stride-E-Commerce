@@ -1,13 +1,16 @@
 /* SHOPPING CART */
 .cart {
   padding: var(--small-white-space) 0;
+  container-type: inline-size;
+  container-name: cart;
+  min-height: calc(100vh - var(--nav-height) - var(--footer-height));
 }
 .cart__container {
   max-width: 120rem;
   grid-template-columns: 2fr 1fr;
   column-gap: 6.4rem;
   align-items: start;
-  padding: var(--default-hori-padding);
+  padding-inline: var(--default-hori-padding);
 }
 .cart__items {
   display: flex;
