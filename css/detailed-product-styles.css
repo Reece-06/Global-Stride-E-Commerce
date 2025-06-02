@@ -218,6 +218,7 @@
   padding: 1.6rem 2.4rem;
   background-color: var(--darkest-primary-color);
   transition: all 0.3s;
+  text-align: center;
 }
 .product-detail__add-cart:hover,
 .product-detail__add-cart:active {
