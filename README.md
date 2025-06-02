@@ -1,4 +1,4 @@
-# 🏃‍♂️ RunGear E-Commerce Website
+# 🏃‍♂️ Global Strides E-Commerce Website
 
 Welcome to **RunGear**, an e-commerce website dedicated to providing high-quality running equipment for runners of all levels around the world.
 
@@ -33,10 +33,12 @@ RunGear aims to offer a clean, responsive, and user-friendly online store for:
 ## 📌 How to Run Locally
 
 1. Clone the repository:
+
    ```bash
-   git clone https://github.com/yourusername/rungear-ecommerce.git
+   https://github.com/yourusername/Global-Stride-E-Commerce.git
    
-2. Open index.html in your browser:
-  ```bash
-  cd rungear-ecommerce
-  open index.html
+3. Open index.html in your browser:
+
+   ```bash
+   cd cloned-directory
+   open index.html
